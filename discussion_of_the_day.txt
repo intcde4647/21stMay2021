@@ -1,0 +1,89 @@
+
+1) Java as an object oriented Language.
+   * Inheritance
+   * Encapsulation
+   * Abstraction ( Abstract classes and Interfaces)  
+   * Polymorhism ( Method overloading and overriding)
+
+2) Interfaces from the perspective of Java 8.
+   In interaces we can declare variables which are 
+    public, final , static in nature.
+     public interface MyInterface {
+       int i;
+      }
+     The above code will compilation error.
+     public interface MyInterface {
+       int i=12;
+      }
+3) Interface provides with a set of rules(methods) which we need to implement in the class.
+   We cannot create an object of interfaces but we can create references of interfaces and object of the
+   class which has implemented the interface.
+   
+   Driver driver=new com.mysql.cj.jdbc.Driver();
+   List<String> list=new ArrayList<>();
+
+4) Functional Interface
+--------------------------------------------------------------------------------------------------
+Overloading and overriding
+---------------------------------------------------------------------------------
+usage of static,final.
+Access specifiers private,default,protected,public.
+---------------------------------------------------------------------------------------
+Wrapper classes
+String,StringBuffer,StringBuilder
+Date and Time
+------------------------------------------------------------------------------------------------
+Exception Handling
+----------------------------------------------------------------------------------
+Multi Threading
+----------------------------------------------------------------------------------------------------------
+Collections ( along with collection studying generics)
+-----------------------------------------------------------------------
+I/O File handling
+--------------------------------------------------------------
+Java 8 features=====> Interfaces, Functional Interfaces, Lambda expression,
+    streams and stream related API
+------------------------------------------------------------------------------
+JDBC
+-----------------------------------------------------------------------
+
+
+While JDBC connectivity we talk about drivers.
+
+DriverManager class: Loads the database driver.
+Driver interface: Represents a database driver. All JDBC driver classes must implement the Driver interface.
+                   For example The MySQL driver com.mysql.cj.jdbc.Driver() has implemented the interface
+                   com.sql.Driver interface.
+Connection interface: Enables you to establish a connection between a Java application and a database.
+Statement interface: Enables you to execute static SQL statements.
+PreparedStatement interfaces: Enables you to execute dynamic SQL statements. dynamic SQL statements which 
+receives data during the runtime.
+Performance wise PreparedStatement is much more faster as PreparedStatement related statement is compiled once
+and is kept with the database whereas Statement related SQL statements are submitted to the database server 
+and will be compiled as many times as the program is executed.
+ResultSet interface: Represents the infromation retrieved from a database.
+SQLException class: Provides information about the exceptions that occur while interacting with the database.
+-------------------------------------------------------------------------------------------------------------- 
+Working with data and time.
+
+https://www.javatpoint.com/java-simpledateformat
+
+Java SimpleDateFormat
+The java.text.SimpleDateFormat class provides methods to format and parse date and time in java. The SimpleDateFormat is a concrete class for formatting and parsing date which inherits java.text.DateFormat class.
+
+Notice that formatting means converting date to string and parsing means converting string to date.
+
+Java SimpleDateFormat Example: Date to String
+Let's see the simple example to format date in java using java.text.SimpleDateFormat class.
+
+
+
+
+
+
+
+
+
+
+
+ 
